@@ -4,7 +4,7 @@ A sleek, terminal-themed personal portfolio built for a Cloud Engineer transitio
 
 ## 🚀 Live Demo
 
-*(Add your Vercel deployment link here once deployed)*
+[dev-ghildiyal.vercel.app](https://dev-ghildiyal.vercel.app/)
 
 ## 🛠️ Tech Stack
 
