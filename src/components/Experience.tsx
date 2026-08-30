@@ -11,7 +11,7 @@ const experiences = [
   {
     title: "Web Ops Analyst",
     company: "eClerx",
-    date: "November 2025 - August 2026",
+    date: "October 2025 - August 2026",
     description: "Managed and optimized web operations. Applied DevOps principles by implementing CI/CD workflows, automating infrastructure tasks, and improving system reliability.",
     tech: ["Web Operations", "Linux", "Automation"]
   }
