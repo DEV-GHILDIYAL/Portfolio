@@ -122,7 +122,7 @@ export default function Hero() {
           {/* Main Profile Image Container */}
           <div className="relative z-10 w-64 h-72 md:w-80 md:h-96 rounded-2xl overflow-hidden border border-brand-green/40 shadow-[0_0_50px_rgba(34,197,94,0.2)] rotate-3 hover:rotate-0 transition-transform duration-500 group">
             <img 
-              src="/assets/Dev%20Ghildiyal%20Image.jpg" 
+              src="/assets/Dev%20Ghildiyal%20Image.png" 
               alt="Dev Ghildiyal" 
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
             />
