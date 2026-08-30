@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DEPLOY_PATH = '/opt/apps/portfolio'
-        SERVER_IP = '13.206.217.176'
+        SERVER_IP = '10.0.1.173'
     }
 
     stages {
