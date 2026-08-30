@@ -26,8 +26,8 @@ pipeline {
                 unstash 'dist'
                 sshagent(credentials: ['app-server-ssh']) {
                     sh """
-                        ssh -o StrictHostKeyChecking=no ubuntu@\${SERVER_IP} 'mkdir -p \${DEPLOY_PATH}'
-                        scp -o StrictHostKeyChecking=no -r dist/* ubuntu@\${SERVER_IP}:\${DEPLOY_PATH}/
+                        ssh -o StrictHostKeyChecking=no ubuntu@${SERVER_IP} "mkdir -p ${DEPLOY_PATH}"
+                        scp -o StrictHostKeyChecking=no -r dist/* ubuntu@${SERVER_IP}:${DEPLOY_PATH}/
                     """
                 }
             }
