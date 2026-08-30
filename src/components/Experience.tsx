@@ -2,10 +2,17 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
+    title: "DevOps Engineer",
+    company: "Fyntune Solution",
+    date: "August 2026 - Present",
+    description: "Designing, building, and maintaining cloud infrastructure, CI/CD pipelines, and automated deployment systems to deliver high availability, scalability, and security.",
+    tech: ["DevOps", "AWS", "Docker", "Terraform", "CI/CD"]
+  },
+  {
     title: "Web Ops Analyst",
     company: "eClerx",
-    date: "November 2025 - Present",
-    description: "Managing and optimizing web operations. Actively applying DevOps principles by exploring CI/CD workflows, automating infrastructure tasks, and improving system reliability.",
+    date: "November 2025 - August 2026",
+    description: "Managed and optimized web operations. Applied DevOps principles by implementing CI/CD workflows, automating infrastructure tasks, and improving system reliability.",
     tech: ["Web Operations", "Linux", "Automation"]
   }
 ];

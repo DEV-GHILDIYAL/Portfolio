@@ -28,7 +28,7 @@ export default function About() {
           
           <div className="text-text-secondary text-lg leading-relaxed mb-12 space-y-4">
             <p>
-              I'm a CS graduate and currently a Web Ops Analyst at eClerx, transitioning into a DevOps / Cloud Engineering role. I specialize in building, automating, and scaling infrastructure.
+              I'm a CS graduate working as a DevOps Engineer at Fyntune Solution, with previous experience as a Web Ops Analyst at eClerx. I specialize in building, automating, and scaling cloud infrastructure.
             </p>
             <p>
               My approach is hands-on: I don't just follow tutorials. I build and deploy real-world projects, from full CI/CD pipelines to robust monitoring stacks and cloud infrastructure.
