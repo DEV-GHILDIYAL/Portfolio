@@ -95,28 +95,64 @@ export default function Hero() {
           <div className="absolute inset-0 border border-brand-green/10 rounded-full animate-[spin_15s_linear_infinite_reverse] pointer-events-none" style={{ width: '350px', height: '350px', left: '50%', top: '50%', marginLeft: '-175px', marginTop: '-175px' }} />
 
           {/* Floating Tech Icons */}
+          {/* 1. Terraform - Top Left */}
           <motion.div 
-            animate={{ y: [-15, 15, -15], rotate: [0, 10, 0] }}
+            animate={{ y: [-12, 12, -12], rotate: [0, 8, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-10 left-10 lg:left-0 bg-bg-card border border-brand-green/30 p-4 rounded-xl shadow-[0_0_30px_rgba(34,197,94,0.15)] z-20 backdrop-blur-md"
+            className="absolute top-2 left-2 lg:-left-6 bg-bg-card/90 border border-brand-green/30 p-3 rounded-xl shadow-[0_0_25px_rgba(34,197,94,0.18)] z-20 backdrop-blur-md hover:border-brand-green hover:scale-110 transition-all duration-300 group cursor-pointer"
+            title="Terraform"
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" className="w-10 h-10" />
-          </motion.div>
-          
-          <motion.div 
-            animate={{ y: [15, -15, 15], rotate: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-            className="absolute bottom-10 right-10 lg:-right-5 bg-bg-card border border-brand-green/30 p-4 rounded-xl shadow-[0_0_30px_rgba(34,197,94,0.15)] z-20 backdrop-blur-md"
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-10 h-10" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" className="w-8 h-8 md:w-10 md:h-10 group-hover:rotate-6 transition-transform" />
           </motion.div>
 
+          {/* 2. Kubernetes - Top Right */}
           <motion.div 
-            animate={{ y: [-10, 10, -10], x: [-5, 5, -5] }}
-            transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-            className="absolute top-1/2 -right-4 lg:-right-12 bg-bg-card border border-brand-green/30 p-3 rounded-xl shadow-[0_0_20px_rgba(34,197,94,0.15)] z-20 backdrop-blur-md"
+            animate={{ y: [-10, 10, -10], rotate: [0, -8, 0] }}
+            transition={{ duration: 5.4, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
+            className="absolute top-2 right-2 lg:-right-6 bg-bg-card/90 border border-brand-green/30 p-3 rounded-xl shadow-[0_0_25px_rgba(34,197,94,0.18)] z-20 backdrop-blur-md hover:border-brand-green hover:scale-110 transition-all duration-300 group cursor-pointer"
+            title="Kubernetes"
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="w-12 h-12 object-contain" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="w-8 h-8 md:w-10 md:h-10 group-hover:rotate-6 transition-transform" />
+          </motion.div>
+
+          {/* 3. Linux - Middle Left */}
+          <motion.div 
+            animate={{ y: [10, -10, 10], x: [-4, 4, -4] }}
+            transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 1.4 }}
+            className="absolute top-1/2 -translate-y-1/2 -left-6 lg:-left-14 bg-bg-card/90 border border-brand-green/30 p-3 rounded-xl shadow-[0_0_25px_rgba(34,197,94,0.18)] z-20 backdrop-blur-md hover:border-brand-green hover:scale-110 transition-all duration-300 group cursor-pointer"
+            title="Linux"
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" className="w-8 h-8 md:w-10 md:h-10 group-hover:rotate-6 transition-transform" />
+          </motion.div>
+
+          {/* 4. AWS - Middle Right */}
+          <motion.div 
+            animate={{ y: [-10, 10, -10], x: [4, -4, 4] }}
+            transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+            className="absolute top-1/2 -translate-y-1/2 -right-6 lg:-right-14 bg-bg-card/90 border border-brand-green/30 p-3 rounded-xl shadow-[0_0_25px_rgba(34,197,94,0.18)] z-20 backdrop-blur-md hover:border-brand-green hover:scale-110 transition-all duration-300 group cursor-pointer"
+            title="AWS"
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="w-9 h-9 md:w-11 md:h-11 object-contain group-hover:rotate-6 transition-transform" />
+          </motion.div>
+
+          {/* 5. Jenkins - Bottom Left */}
+          <motion.div 
+            animate={{ y: [12, -12, 12], rotate: [0, 8, 0] }}
+            transition={{ duration: 5.2, repeat: Infinity, ease: "easeInOut", delay: 0.9 }}
+            className="absolute bottom-2 left-2 lg:-left-6 bg-bg-card/90 border border-brand-green/30 p-3 rounded-xl shadow-[0_0_25px_rgba(34,197,94,0.18)] z-20 backdrop-blur-md hover:border-brand-green hover:scale-110 transition-all duration-300 group cursor-pointer"
+            title="Jenkins"
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" className="w-8 h-8 md:w-10 md:h-10 group-hover:rotate-6 transition-transform" />
+          </motion.div>
+
+          {/* 6. Docker - Bottom Right */}
+          <motion.div 
+            animate={{ y: [14, -14, 14], rotate: [0, -10, 0] }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+            className="absolute bottom-2 right-2 lg:-right-6 bg-bg-card/90 border border-brand-green/30 p-3 rounded-xl shadow-[0_0_25px_rgba(34,197,94,0.18)] z-20 backdrop-blur-md hover:border-brand-green hover:scale-110 transition-all duration-300 group cursor-pointer"
+            title="Docker"
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-8 h-8 md:w-10 md:h-10 group-hover:rotate-6 transition-transform" />
           </motion.div>
 
           {/* Main Profile Image Container */}
